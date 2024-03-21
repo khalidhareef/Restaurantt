@@ -1,38 +1,85 @@
-.App {
-  text-align: center;
+
+#background-video {
+ 
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+.popup-inner {
+  
+  padding: 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+.app{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  
+}
+.Button{
+  background-color: rgb(24, 123, 63);
   color: white;
+  padding: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 35px;
+}
+.Button1{
+  background-color: rgb(24, 123, 63);
+  color: white;
+  padding: 30px;
+  border: none;
+  cursor: pointer;
+  border-radius: 35px;
+  
+}
+.Button:hover {
+  animation: shake 0.2s infinite;
 }
 
-.App-link {
-  color: #61dafb;
+@keyframes shake {
+  0% { transform: rotate(0deg); }
+  25% { transform: rotate(8deg); }
+  50% { transform: rotate(0deg); }
+  75% { transform: rotate(-8deg); }
+  100% { transform: rotate(0deg); }
+}
+.carouseltag{
+ margin-right: 780px;
+ margin-bottom: 250px;
+ 
+}
+.cards{
+ cursor: pointer;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+h2{
+  font-size: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
